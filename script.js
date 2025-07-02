@@ -62,7 +62,8 @@ const startButton = document.getElementById("startButton");
 
 const result = document.getElementById("result");
 
-const values = ["🍈", "🍌", "🥭", "🫐", "🍉", "🍇", "🍎"];
+// const values = ["🍈", "🍌", "🥭", "🫐", "🍉", "🍇", "🍎"];
+const values = ["🍈", "🍌", "🍉"];
 
 let animationId;
 
@@ -114,7 +115,7 @@ function checkResult() {
 
       confetti.style.fontSize = "2rem";
 
-      document.body.prepend(confetti);
+      document.body.append(confetti);
       setTimeout(() => confetti.remove(), 2000);
     }
   } else {
