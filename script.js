@@ -67,7 +67,9 @@ const values = ["🍈", "🍌", "🥭", "🫐", "🍉", "🍇", "🍎"];
 let animationId;
 
 function getRandomValue() {
-  return values[Math.floor(Math.random() * values.length-1)];
+  // let index= Math.floor(Math.random() * (values.length-1));
+  // console.log(index); Remember that Math.random() returns a number between 0 (inclusive) and 1 (exclusive)
+  return values[Math.floor(Math.random() * values.length)];
 
 }
 
